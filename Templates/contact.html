@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me - Likitha Dadi</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 class="logo">Likitha Dadi</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/#about">About</a></li>
+                <li><a href="/#skills">Skills</a></li>
+                <li><a href="/#projects">Projects</a></li>
+                <li><a href="/#education">Education</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section id="hero">
+    <div class="container">
+        <h2>Let's Connect</h2>
+        <p>I'm open to collaborations, freelance work, internships, and job opportunities. Drop me a message below!</p>
+    </div>
+</section>
+
+<section id="contact-form-section">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <form method="POST" action="/contact" class="contact-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<section id="contact-info">
+    <div class="container">
+        <h2>Other Ways to Reach Me</h2>
+        <p><strong>Email:</strong> likithadadi08@gmail.com</p>
+        <p><strong>Phone:</strong> +91-9381676406</p>
+        <p><strong>Location:</strong> Visakhapatnam, India</p>
+        <div class="social-links">
+            <a href="https://github.com/LIKITHAADADI" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/dadilikitha/" target="_blank">LinkedIn</a> |
+            <a href="mailto:likithadadi08@gmail.com">Email</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Likitha Dadi. All rights reserved.</p>
+    </div>
+</footer>
+
+</body>
+</html>
